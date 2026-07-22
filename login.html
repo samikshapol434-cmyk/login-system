@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Firebase Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Firebase Student Database</h2>
+
+        <input id="name" type="text" placeholder="Enter Name">
+
+        <input id="age" type="number" placeholder="Enter Age">
+
+        <input id="email" type="email" placeholder="Enter Email ID">
+
+        <input id="mobile" type="text" placeholder="Enter Mobile No">
+
+        <button onclick="saveData()">Save</button>
+        <button onclick="loadData()">Show Data</button>
+
+        <div id="output"></div>
+    </div>
+<div>
+<div align="center"><a href="index.html">
+<button onClick="loadData()">logout</button>
+</a></div>
+
+    
+
+</body>
+</html>
