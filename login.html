@@ -1,64 +1,108 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>Firebase Demo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .container {
-            width: 350px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
-        }
+```
+<title>Firebase Student Database</title>
 
-        input {
-            width: 95%;
-            padding: 10px;
-            margin: 8px 0;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
 
-        button {
-            padding: 10px 20px;
-            margin: 5px;
-            cursor: pointer;
-        }
+    .container {
+        width: 350px;
+        margin: 50px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+    }
 
-        #output {
-            margin-top: 20px;
-        }
-    </style>
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    input {
+        width: 95%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background: #007bff;
+        color: white;
+    }
+
+    button:hover {
+        background: #0056b3;
+    }
+
+    #output {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .logout {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .logout button {
+        background: #dc3545;
+    }
+
+    .logout button:hover {
+        background: #a71d2a;
+    }
+</style>
+```
+
 </head>
 
 <body>
 
-    <div class="container">
-        <h2>Firebase Student Database</h2>
+```
+<div class="container">
 
-        <input id="name" type="text" placeholder="Enter Name">
+    <h2>Firebase Student Database</h2>
 
-        <input id="age" type="number" placeholder="Enter Age">
+    <input id="name" type="text" placeholder="Enter Name">
 
-        <input id="email" type="email" placeholder="Enter Email ID">
+    <input id="age" type="number" placeholder="Enter Age">
 
-        <input id="mobile" type="text" placeholder="Enter Mobile No">
+    <input id="email" type="email" placeholder="Enter Email ID">
 
-        <button onclick="saveData()">Save</button>
-        <button onclick="loadData()">Show Data</button>
+    <input id="mobile" type="text" placeholder="Enter Mobile No">
 
-        <div id="output"></div>
+    <button onclick="saveData()">Save</button>
+
+    <button onclick="loadData()">Show Data</button>
+
+    <div id="output"></div>
+
+    <div class="logout">
+        <a href="login.html">
+            <button type="button">Logout</button>
+        </a>
     </div>
-<div>
-<div align="center"><a href="login.html">
-<button onClick="loadData()">logout</button>
-</a></div>
 
-    
+</div>
+```
 
 </body>
 </html>
